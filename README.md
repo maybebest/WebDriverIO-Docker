@@ -20,7 +20,8 @@ https://www.npmjs.com/package/allure-commandline
 ## Scripts
 * start app: `npm run app:start`
 * run all tests: `npm run wdio:run`
-* generate allure report: `npm run allure:generate_report`
+* generate allure report: `npm run allure:generate_report` 
+  (report will be generated under ./allure-report/index.html)
 * clear allure reports: `npm run allure:clear`
 
 ## Docker
