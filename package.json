@@ -13,9 +13,10 @@
     "wdio-chromedriver-service": "^8.0.1"
   },
   "scripts": {
-    "wdio:run": "wdio run ./wdio.conf.js",
+    "wdio:run": "npm run allure:clear && wdio run ./wdio.conf.js",
     "app:start": "node server.js",
-    "allure:generate_report": "allure generate",
+    "allure:generate_report": "allure generate --clean",
+    "allure:clear": "rm -r allure-results/ allure-report || true",
     "docker:build": "docker build . -t dmuz/test_task:v5",
     "docker:run": "docker run -p 8080:8080 -d dmuz/test_task:v5",
     "docker:kill": "docker kill dmuz/test_task:v5"

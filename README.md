@@ -19,10 +19,12 @@ https://webdriver.io/docs/allure-reporter/
 https://www.npmjs.com/package/allure-commandline
 
 ## Scripts
-* start app: `npm run start`
-* run all tests: `npm run wdio`
-* generate allure report: `npm run generate_allure_report`
+* start app: `npm run app:start`
+* run all tests: `npm run wdio:run`
+* generate allure report: `npm run allure:generate_report`
+* clear allure reports: `npm run allure:clear`
 
 ## Docker
-* build container: `docker build . -t dmuz/test_task:{tag_here_without_brackets}`
-* run container: `docker run -p 8080:8080 -d dmuz/test_task:{tag_here_without_brackets}`
+* build: `npm run docker:build`
+* run: `npm run docker:run`
+* kill: `npm run docker:kill`
