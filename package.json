@@ -1,0 +1,27 @@
+{
+  "name": "my-new-project",
+  "type": "module",
+  "main": "server.js",
+  "devDependencies": {
+    "@wdio/allure-reporter": "^8.0.11",
+    "@wdio/cli": "^8.0.12",
+    "@wdio/local-runner": "^8.0.12",
+    "@wdio/mocha-framework": "^8.0.11",
+    "@wdio/spec-reporter": "^8.0.11",
+    "allure-commandline": "^2.17.2",
+    "chromedriver": "^108.0.0",
+    "wdio-chromedriver-service": "^8.0.1"
+  },
+  "scripts": {
+    "wdio:run": "wdio run ./wdio.conf.js",
+    "app:start": "node server.js",
+    "allure:generate_report": "allure generate",
+    "docker:build": "docker build . -t dmuz/test_task:v5",
+    "docker:run": "docker run -p 8080:8080 -d dmuz/test_task:v5",
+    "docker:kill": "docker kill dmuz/test_task:v5"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "wdio-image-comparison-service": "^5.0.2"
+  }
+}

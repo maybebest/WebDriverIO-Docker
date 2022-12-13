@@ -1,0 +1,7 @@
+*.iml
+.idea
+/node_modules/
+/allure-report/
+/allure-results/
+/actualImg/
+/baselineImg/
