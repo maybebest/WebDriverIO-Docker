@@ -25,6 +25,6 @@ https://www.npmjs.com/package/allure-commandline
 * clear allure reports: `npm run allure:clear`
 
 ## Docker
-* build: `npm run docker:build`
-* run: `npm run docker:run`
-* kill: `npm run docker:kill`
+* build image: `npm run docker:build`
+* run image: `npm run docker:run`
+* shut down image: `npm run docker:kill`
