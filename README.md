@@ -1,5 +1,4 @@
-# System requirements
-## Operating System
+## System requirements
 You’ll need Node.js installed.
 
 * Install at least v16.x or higher as this is the oldest active LTS version
