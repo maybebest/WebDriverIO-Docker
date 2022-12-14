@@ -2,8 +2,8 @@ import MillionMorePage from '../pageobjects/millionMore.page.js'
 import Navigation from '../pageobjects/navigation.page.js'
 import {Urls} from "../projectUlrs/urls.js";
 
-describe('Landing page - interactive elements', () => {
-    it('should save some screenshots', async () => {
+describe('Million more page - visual regression testing', () => {
+    it('should save screenshot and verify it', async () => {
         await Navigation.openPage(Urls.millionMore)
         await MillionMorePage.clickAcceptCookies()
         await browser.saveElement(
